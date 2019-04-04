@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Clicker</title>
+</head>
+<body>
+<div style="background: black"> <br/>
+    <center>
+        <button onclick="plusone()" style="width: 1000px;height:500px; background: limegreen; font-size: 45px">
+            <div id="number">0</div>
+        </button>
+    </center>
+</div>
+<audio id="audios" >
+    <source src="click%207.wav">
+</audio>
+</body>
+<script>
+    i = 0
+    function plusone() {
+        i=i+1
+        document.getElementById("number").innerHTML=i
+        document.getElementById("audios").play()
+
+    }
+</script>
+</html>
